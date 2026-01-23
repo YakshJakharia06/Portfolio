@@ -20,10 +20,10 @@ const About = () => {
   };
 
   const skills = [
-    { name: "Frontend", items: ["React.js", "Next.js", "Tailwind CSS", "Redux"] },
-    { name: "Backend", items: ["Node.js", "Express.js", "REST APIs", "GraphQL"] },
-    { name: "Database", items: ["MongoDB", "PostgreSQL", "Redis"] },
-    { name: "Tools", items: ["Git", "Docker", "AWS", "Vercel"] }
+    { name: "Frontend", items: ["React.js", "Next.js", "Tailwind CSS"] },
+    { name: "Backend", items: ["Node.js", "Express.js", "REST APIs"] },
+    { name: "Database", items: ["MongoDB", "PostgreSQL"] },
+    { name: "Tools", items: ["Git", "Vercel"] }
   ];
 
   return (
