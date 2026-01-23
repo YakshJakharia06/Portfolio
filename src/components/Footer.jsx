@@ -21,7 +21,6 @@ const Footer = () => {
           <a href={personalInfo.linkedin} target="_blank" className="hover:text-white transition-colors"><Linkedin size={20} /></a>
         </div>
         <p>© {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</p>
-        <p className="mt-2 text-xs opacity-50">Built with React & Tailwind CSS</p>
       </footer>
     </div>
   )
