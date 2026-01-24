@@ -22,7 +22,7 @@ const Project = () => {
       description: "A platform connecting donors with causes, featuring secure payment integration and impact tracking.",
       tech: ["Node.js", "Express", "React", "MongoDB"],
       link: "https://donate-money.vercel.app/",
-      source: "https://github.com/YakshJakharia06/Donate-Money"
+      source: "https://github.com/YakshJakharia06/Donate-Money1"
     },
     {
       title: "URL Shortener",
