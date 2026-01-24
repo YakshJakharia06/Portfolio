@@ -31,8 +31,6 @@ const Hero = () => {
 	return (
 		<div>
 			<section id="home" className="pt-32 pb-20 px-4">
-				<div className="absolute top-0 right-0 w-125 h-125 bg-cyan-500/10 blur-[120px] rounded-full -z-10 translate-x-1/2 -translate-y-1/2"></div>
-				<div className="absolute bottom-0 left-0 w-100 h-100 bg-blue-600/10 blur-[100px] rounded-full -z-10 -translate-x-1/2 translate-y-1/2"></div>
 
 				<div className="max-w-4xl mx-auto text-center">
 					<div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-6">
