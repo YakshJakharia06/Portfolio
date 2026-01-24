@@ -31,19 +31,23 @@ const Hero = () => {
 	return (
 		<div>
 			<section id="home" className="pt-32 pb-20 px-4">
+				<div className="absolute top-0 right-0 w-125 h-125 bg-cyan-500/10 blur-[120px] rounded-full -z-10 translate-x-1/2 -translate-y-1/2"></div>
+				<div className="absolute bottom-0 left-0 w-100 h-100 bg-blue-600/10 blur-[100px] rounded-full -z-10 -translate-x-1/2 translate-y-1/2"></div>
+
 				<div className="max-w-4xl mx-auto text-center">
-					<div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">
-						Available for New Opportunities
-					</div>
-					<h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
-						Building Digital Products <br />
-						<span className="bg-linear-to-r from-blue-400 via-indigo-400 to-emerald-400 bg-clip-text text-transparent">
-							with the MERN Stack.
+					<div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-6">
+						<span className="relative flex h-2 w-2">
+							<span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+							<span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
 						</span>
+						AVAILABLE FOR HIRE
+					</div>
+					<h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+						Full Stack <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-blue-500">MERN</span> Developer
 					</h1>
-					<p className="text-lg text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-						Hi, I'm Yaksh. A full-stack engineer focused on creating robust backends
-						and pixel-perfect frontends.
+					<p className="text-lg md:text-xl text-slate-400 mb-10 leading-relaxed">
+						Crafting robust web applications with MongoDB, Express, React, and Node.js.
+						Focused on building scalable solutions and exceptional user experiences.
 					</p>
 					<div className="flex flex-wrap justify-center gap-4">
 						<button
