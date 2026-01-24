@@ -19,10 +19,8 @@ const Contact = ({ onDownloadResume }) => {
   return (
     <section id="contact" className="py-24 px-4 bg-slate-950">
       <div className="max-w-4xl mx-auto bg-slate-900 border border-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Let's Connect</h2>
-          <p className="text-slate-400">Currently open for freelance work and full-time roles.</p>
-        </div>
+        <h2 className="text-4xl font-bold text-white mb-6">Let's build something <br/> <span className="text-cyan-500">extraordinary</span>.</h2>
+        <p className="text-slate-400 text-lg mb-10">I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
