@@ -17,7 +17,7 @@ const Navbar = ({ onDownloadResume }) => {
 
   return (
     <div>
-      <nav className="fixed top-0 w-full not-sm:w-93.5 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+      <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between overflow-x-hidden">
           {/* Enhanced Logo Design */}
           <div onClick={() => scrollTo('home')} className="flex items-center gap-1.5 cursor-pointer group">
@@ -50,7 +50,7 @@ const Navbar = ({ onDownloadResume }) => {
 
         {/* Mobile Nav */}
         {isMenuOpen && (
-          <div className="md:hidden w-full mt-15 bg-slate-900 p-4 border-b border-slate-800 animate-in slide-in-from-top duration-300 fixed top-0">
+          <div className="md:hidden bg-slate-900 p-4 border-b border-slate-800 animate-in slide-in-from-top duration-300">
             {['home', 'about', 'projects', 'contact'].map((item) => (
               <button key={item} onClick={() => scrollTo(item)} className="block w-full text-left py-3 capitalize text-slate-300 hover:text-white">
                 {item}
