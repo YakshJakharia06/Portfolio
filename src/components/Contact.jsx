@@ -88,11 +88,11 @@ const Contact = ({ onDownloadResume }) => {
               rows="4"
               className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 text-slate-100 transition-colors resize-none"
             ></textarea>
-            <a href={`mailto:${personalInfo.email}`} >
+            
               <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-all shadow-lg shadow-blue-500/20">
-                Send Message to {personalInfo.email} <Send size={18} />
+                <a href={`mailto:${personalInfo.email}`} >  Send Message to<Send size={18} /> </a>
               </button>
-            </a>
+            
           </form>
         </div>
       </div>
