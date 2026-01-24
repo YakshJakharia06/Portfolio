@@ -90,7 +90,7 @@ const Contact = ({ onDownloadResume }) => {
             ></textarea>
             
               <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-all shadow-lg shadow-blue-500/20">
-                <a href={`mailto:${personalInfo.email}`} className="flex">Send Message <Send size={18} /></a>
+                <a href={`mailto:${personalInfo.email}`} className="flex items-center text-center gap-2">Send Message <Send size={18} /></a>
               </button>
             
           </form>
