@@ -9,13 +9,15 @@ const Project = () => {
       title: "X Clone",
       description: "A full-featured social media platform with real-time updates, user authentication, and media sharing capabilities.",
       tech: ["React", "Node.js", "MongoDB"],
-      link: "#"
+      link: "#",
+      source: "https://github.com/YakshJakharia06"
     },
     {
       title: "Netflix Clone",
       description: "Movie streaming interface with dynamic category browsing and high-fidelity UI replication using TMDB API.",
       tech: ["React", "Firebase", "Tailwind CSS"],
-      link: "#"
+      link: "#",
+      source: "https://github.com/YakshJakharia06"
     },
     {
       title: "Donation Web-App",
