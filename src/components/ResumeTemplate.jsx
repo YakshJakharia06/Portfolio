@@ -1,6 +1,24 @@
 import React from 'react'
 
 const ResumeTemplate = () => {
+  const links = {
+    linkedin: 'https://linkedin.com/in/yaksh-jakharia-409555311',
+    github: 'https://github.com/YakshJakharia06',
+
+    leetcode: 'https://leetcode.com/u/yaksh_jakharia',
+
+    voiceKhataGithub: 'https://github.com/134shubhamyadav/VoiceKhata',
+    voiceKhataLive: 'https://voicekhata.vercel.app',
+
+    donateGithub: 'https://github.com/YakshJakharia06/Donate-Money',
+    donateLive: 'https://donate-money.vercel.app',
+  }
+
+  const linkStyle = {
+    color: '#2563eb',
+    textDecoration: 'none',
+  }
+
   return (
     <div>
       <div style={{ position: 'absolute', left: '-9999px', top: 0 }}>
@@ -17,16 +35,16 @@ const ResumeTemplate = () => {
             lineHeight: '1.4',
           }}
         >
-          {/* Header */}
+          {/* ================= HEADER ================= */}
           <div
             style={{
               textAlign: 'center',
-              marginBottom: '15px',
+              marginBottom: '12px',
             }}
           >
             <h1
               style={{
-                fontSize: '25pt',
+                fontSize: '24pt',
                 margin: '0',
                 color: '#000',
                 fontWeight: '700',
@@ -38,7 +56,7 @@ const ResumeTemplate = () => {
             <p
               style={{
                 fontSize: '9.5pt',
-                margin: '5px 0',
+                margin: '4px 0',
               }}
             >
               Software Development Engineer Intern
@@ -50,7 +68,13 @@ const ResumeTemplate = () => {
                 margin: '3px 0',
               }}
             >
-              Thane, Maharashtra, India | 8530944492 | jakhariayaksh@gmail.com
+              Thane, Maharashtra, India | 8530944492 |{' '}
+              <a
+                href="mailto:jakhariayaksh@gmail.com"
+                style={linkStyle}
+              >
+                jakhariayaksh@gmail.com
+              </a>
             </p>
 
             <p
@@ -59,23 +83,48 @@ const ResumeTemplate = () => {
                 margin: '3px 0',
               }}
             >
-              LinkedIn | GitHub | LeetCode
+              <a
+                href={links.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={linkStyle}
+              >
+                LinkedIn
+              </a>
+              {' | '}
+              <a
+                href={links.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={linkStyle}
+              >
+                GitHub
+              </a>
+              {' | '}
+              <a
+                href={links.leetcode}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={linkStyle}
+              >
+                LeetCode
+              </a>
             </p>
           </div>
 
           <div
             style={{
               borderBottom: '2px solid #333',
-              marginBottom: '12px',
+              marginBottom: '10px',
             }}
           />
 
-          {/* Professional Summary */}
+          {/* ================= PROFESSIONAL SUMMARY ================= */}
           <h3
             style={{
               fontSize: '12pt',
               color: '#2563eb',
-              margin: '0 0 6px 0',
+              margin: '0 0 5px 0',
               textTransform: 'uppercase',
               borderBottom: '1px solid #ddd',
               paddingBottom: '3px',
@@ -87,24 +136,24 @@ const ResumeTemplate = () => {
           <p
             style={{
               fontSize: '9pt',
-              margin: '0 0 10px 0',
+              margin: '0 0 9px 0',
             }}
           >
             Third-year B.E. (AIML) student with hands-on experience building
             full-stack MERN applications and integrating AI/NLP capabilities.
             Proficient in Java, Python, JavaScript, React.js, Node.js, and
-            MongoDB; solved 110+ DSA problems on LeetCode. Top-20 finisher at
-            HackVerse Hackathon. Seeking an SDE internship to apply strong
-            problem-solving and full-stack development skills at a product-based
-            company.
+            MongoDB; solved 132 Data Structures & Algorithms problems on
+            LeetCode. Top-20 finisher at HackVerse Hackathon. Seeking an SDE
+            internship to apply strong problem-solving and full-stack
+            development skills at a product-based company.
           </p>
 
-          {/* Technical Skills */}
+          {/* ================= TECHNICAL SKILLS ================= */}
           <h3
             style={{
               fontSize: '12pt',
               color: '#2563eb',
-              margin: '0 0 6px 0',
+              margin: '0 0 5px 0',
               textTransform: 'uppercase',
               borderBottom: '1px solid #ddd',
               paddingBottom: '3px',
@@ -116,7 +165,7 @@ const ResumeTemplate = () => {
           <div
             style={{
               fontSize: '9pt',
-              marginBottom: '10px',
+              marginBottom: '9px',
             }}
           >
             <p style={{ margin: '2px 0' }}>
@@ -152,12 +201,12 @@ const ResumeTemplate = () => {
             </p>
           </div>
 
-          {/* Education */}
+          {/* ================= EDUCATION ================= */}
           <h3
             style={{
               fontSize: '12pt',
               color: '#2563eb',
-              margin: '0 0 6px 0',
+              margin: '0 0 5px 0',
               textTransform: 'uppercase',
               borderBottom: '1px solid #ddd',
               paddingBottom: '3px',
@@ -166,7 +215,7 @@ const ResumeTemplate = () => {
             Education
           </h3>
 
-          <div style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '9px' }}>
             <p
               style={{
                 margin: '0',
@@ -207,12 +256,12 @@ const ResumeTemplate = () => {
             </p>
           </div>
 
-          {/* Experience */}
+          {/* ================= EXPERIENCE ================= */}
           <h3
             style={{
               fontSize: '12pt',
               color: '#2563eb',
-              margin: '0 0 6px 0',
+              margin: '0 0 5px 0',
               textTransform: 'uppercase',
               borderBottom: '1px solid #ddd',
               paddingBottom: '3px',
@@ -221,7 +270,7 @@ const ResumeTemplate = () => {
             Experience
           </h3>
 
-          <div style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '9px' }}>
             <p
               style={{
                 margin: '0',
@@ -253,12 +302,12 @@ const ResumeTemplate = () => {
             </ul>
           </div>
 
-          {/* Projects */}
+          {/* ================= PROJECTS ================= */}
           <h3
             style={{
               fontSize: '12pt',
               color: '#2563eb',
-              margin: '0 0 6px 0',
+              margin: '0 0 5px 0',
               textTransform: 'uppercase',
               borderBottom: '1px solid #ddd',
               paddingBottom: '3px',
@@ -268,7 +317,7 @@ const ResumeTemplate = () => {
           </h3>
 
           {/* VoiceKhata */}
-          <div style={{ marginBottom: '9px' }}>
+          <div style={{ marginBottom: '8px' }}>
             <p
               style={{
                 margin: '0',
@@ -287,6 +336,24 @@ const ResumeTemplate = () => {
               }}
             >
               <strong>Tech Stack:</strong> Node.js, Express.js, MongoDB, Next.js
+              {' | '}
+              <a
+                href={links.voiceKhataGithub}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={linkStyle}
+              >
+                GitHub
+              </a>
+              {' | '}
+              <a
+                href={links.voiceKhataLive}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={linkStyle}
+              >
+                Live Demo
+              </a>
             </p>
 
             <ul
@@ -314,7 +381,7 @@ const ResumeTemplate = () => {
           </div>
 
           {/* Donate Money */}
-          <div style={{ marginBottom: '9px' }}>
+          <div style={{ marginBottom: '8px' }}>
             <p
               style={{
                 margin: '0',
@@ -334,6 +401,24 @@ const ResumeTemplate = () => {
             >
               <strong>Tech Stack:</strong> Next.js, React.js, Node.js,
               Express.js, MongoDB, Auth.js
+              {' | '}
+              <a
+                href={links.donateGithub}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={linkStyle}
+              >
+                GitHub
+              </a>
+              {' | '}
+              <a
+                href={links.donateLive}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={linkStyle}
+              >
+                Live Demo
+              </a>
             </p>
 
             <ul
@@ -368,12 +453,12 @@ const ResumeTemplate = () => {
             </ul>
           </div>
 
-          {/* Certifications */}
+          {/* ================= CERTIFICATIONS ================= */}
           <h3
             style={{
               fontSize: '12pt',
               color: '#2563eb',
-              margin: '0 0 6px 0',
+              margin: '0 0 5px 0',
               textTransform: 'uppercase',
               borderBottom: '1px solid #ddd',
               paddingBottom: '3px',
@@ -384,7 +469,7 @@ const ResumeTemplate = () => {
 
           <ul
             style={{
-              margin: '0 0 10px 0',
+              margin: '0 0 9px 0',
               fontSize: '9pt',
               paddingLeft: '18px',
             }}
@@ -394,12 +479,12 @@ const ResumeTemplate = () => {
             </li>
           </ul>
 
-          {/* Achievements */}
+          {/* ================= ACHIEVEMENTS ================= */}
           <h3
             style={{
               fontSize: '12pt',
               color: '#2563eb',
-              margin: '0 0 6px 0',
+              margin: '0 0 5px 0',
               textTransform: 'uppercase',
               borderBottom: '1px solid #ddd',
               paddingBottom: '3px',
@@ -420,7 +505,7 @@ const ResumeTemplate = () => {
             </li>
 
             <li>
-              Solved 100+ Data Structures & Algorithms problems on LeetCode,
+              Solved 132 Data Structures & Algorithms problems on LeetCode,
               strengthening problem-solving and competitive programming skills.
             </li>
           </ul>
